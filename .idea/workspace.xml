@@ -24,7 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41e92b1a-0de9-4d14-a89f-f23c1d86672a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/owino/layouts/VBoxLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/owino/layouts/VBoxLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/owino/layouts/StackPaneLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/owino/layouts/StackPaneLayout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,9 +80,9 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="498" height="446" key="SwitcherDM" timestamp="1622707642999">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1622711330439">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.864@0.0.1536.864" timestamp="1622707642999" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.864@0.0.1536.864" timestamp="1622711330439" />
   </component>
 </project>
