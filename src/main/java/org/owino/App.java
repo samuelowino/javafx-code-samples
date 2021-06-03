@@ -18,6 +18,9 @@ public class App extends Application {
         try{
             var scene = new Scene(BorderPaneLayout.drawBorderPane(),600,600);
             stage.setScene(scene);
+            stage.setMinHeight(600);
+            stage.setMinWidth(600);
+            stage.setTitle(SystemInfo.appName());
             stage.show();
         }catch (Exception e){
             e.printStackTrace();

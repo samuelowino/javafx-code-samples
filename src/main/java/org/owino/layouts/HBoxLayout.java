@@ -3,6 +3,7 @@ package org.owino.layouts;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
+import org.owino.windows.SigninOptionsWindow;
 
 /**
  * =====================
@@ -27,7 +28,7 @@ import javafx.scene.layout.HBox;
 public class HBoxLayout {
 
     public static HBox addHBox() {
-        HBox hBox = new HBox();
+        var hBox = new HBox();
 
         int topPadding = 15;
         int bottomPadding = 15;
@@ -38,13 +39,18 @@ public class HBoxLayout {
         hBox.setSpacing(10);
         hBox.setStyle("-fx-background-color: #336699;");
 
-        Button startButton = new Button("Current Prices");
-        startButton.setPrefSize(100, 20);
+        var registerButton = new Button("Register");
+        registerButton.setPrefSize(100, 20);
 
-        Button stopButton = new Button("Projected Cost");
+        var stopButton = new Button("Signin");
         stopButton.setPrefSize(100, 20);
 
-        hBox.getChildren().addAll(startButton, stopButton);
+        registerButton.setOnMouseClicked((event) -> {
+            var signinWindow = new SigninOptionsWindow();
+            signinWindow.show();
+        });
+
+        hBox.getChildren().addAll(registerButton, stopButton);
 
         return hBox;
     }
