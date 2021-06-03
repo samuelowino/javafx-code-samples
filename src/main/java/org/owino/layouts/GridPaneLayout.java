@@ -9,6 +9,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 
+import java.net.URISyntaxException;
+
 /**
  * ==========================
  * JavaFX Grid Pane layout
@@ -52,7 +54,7 @@ import javafx.scene.text.Text;
  */
 public class GridPaneLayout {
 
-    public static GridPane addGridPane() {
+    public GridPane addGridPane() throws URISyntaxException {
         GridPane gridPane = new GridPane();
         gridPane.setHgap(10);
         gridPane.setVgap(10);
@@ -79,10 +81,10 @@ public class GridPaneLayout {
         gridPane.add(chartSubtitle,1,1,2,1);
 
         //House icon in column 1, row 1-2
+        String path = getClass().getClassLoader().getResource("house.png").toExternalForm();
+        System.out.println("Path " + path);
         ImageView imageView = new ImageView(
-                new Image(GridPaneLayout.class.getResourceAsStream(
-                        "resources/images/house.png"
-                ))
+                new Image(path)
         );
         gridPane.add(imageView,0,0,1,2);
 
@@ -93,11 +95,7 @@ public class GridPaneLayout {
 
         //Chart in column 2-3, row 3
         ImageView imageChart = new ImageView(
-                new Image(
-                        GridPaneLayout.class.getResourceAsStream(
-                                "resources/images/pie_chart.png"
-                        )
-                )
+                getClass().getClassLoader().getResource("piechart.png").toExternalForm()
         );
         gridPane.add(imageChart,1,2,2,1);
 

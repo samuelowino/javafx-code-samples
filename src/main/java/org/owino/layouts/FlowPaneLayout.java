@@ -27,17 +27,15 @@ public class FlowPaneLayout {
         flowPane.setVgap(4);
         flowPane.setHgap(4);
         flowPane.setPrefWrapLength(170);
-        flowPane.setStyle("-fx=background-color: DAE6F3;");
+        flowPane.setStyle("-fx-background-color: DAE6F3;");
 
         ImageView pages[] = new ImageView[8];
 
         for (int i = 0; i < 8; i++) {
-            Image img;
             pages[i] = new ImageView(
-                    new Image(FlowPaneLayout.class.getResourceAsStream(
-                            "resources/images/chart_" + i + ".png"
-                    ))
+                    new Image(FlowPaneLayout.class.getClassLoader().getResource("chart_" + (i + 1) + ".png").toExternalForm())
             );
+            flowPane.getChildren().add(pages[i]);
         }
 
         return flowPane;

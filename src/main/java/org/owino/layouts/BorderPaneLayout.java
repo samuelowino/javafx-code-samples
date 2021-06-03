@@ -4,6 +4,8 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
+import java.net.URISyntaxException;
+
 /**
  * =====================
  * JavaFx Border Pane
@@ -39,7 +41,7 @@ import javafx.scene.layout.VBox;
 
 public class BorderPaneLayout {
 
-    public static BorderPane drawBorderPane(){
+    public static BorderPane drawBorderPane() throws URISyntaxException {
         BorderPane borderPane = new BorderPane();
 
         HBox hBox = HBoxLayout.addHBox();
@@ -50,7 +52,7 @@ public class BorderPaneLayout {
 
         StackPaneLayout.addStackPane(hBox);
 
-        borderPane.setCenter(GridPaneLayout.addGridPane());
+        borderPane.setCenter(new GridPaneLayout().addGridPane());
         borderPane.setRight(FlowPaneLayout.addFlowPane());
 
         return borderPane;

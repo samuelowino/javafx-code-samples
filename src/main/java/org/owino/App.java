@@ -15,9 +15,13 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) {
-        var scene = new Scene(BorderPaneLayout.drawBorderPane());
-        stage.setScene(scene);
-        stage.show();
+        try{
+            var scene = new Scene(BorderPaneLayout.drawBorderPane(),600,600);
+            stage.setScene(scene);
+            stage.show();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
