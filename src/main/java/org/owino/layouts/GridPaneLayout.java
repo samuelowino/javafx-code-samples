@@ -81,7 +81,7 @@ public class GridPaneLayout {
         //House icon in column 1, row 1-2
         ImageView imageView = new ImageView(
                 new Image(GridPaneLayout.class.getResourceAsStream(
-                        "images/house.png"
+                        "resources/images/house.png"
                 ))
         );
         gridPane.add(imageView,0,0,1,2);
@@ -95,7 +95,7 @@ public class GridPaneLayout {
         ImageView imageChart = new ImageView(
                 new Image(
                         GridPaneLayout.class.getResourceAsStream(
-                                "images/pie_chart.png"
+                                "resources/images/pie_chart.png"
                         )
                 )
         );
