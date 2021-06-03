@@ -24,7 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41e92b1a-0de9-4d14-a89f-f23c1d86672a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/owino/layouts/StackPaneLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/owino/layouts/StackPaneLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/owino/layouts/GridPaneLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/owino/layouts/GridPaneLayout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
