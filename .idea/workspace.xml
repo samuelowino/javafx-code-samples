@@ -23,8 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41e92b1a-0de9-4d14-a89f-f23c1d86672a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/owino/layouts/HBoxLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/owino/layouts/HBoxLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/owino/layouts/VBoxLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/owino/layouts/VBoxLayout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
