@@ -39,7 +39,7 @@ import javafx.scene.layout.VBox;
 
 public class BorderPaneLayout {
 
-    public void drawBorderPane(){
+    public static BorderPane drawBorderPane(){
         BorderPane borderPane = new BorderPane();
 
         HBox hBox = HBoxLayout.addHBox();
@@ -52,5 +52,7 @@ public class BorderPaneLayout {
 
         borderPane.setCenter(GridPaneLayout.addGridPane());
         borderPane.setRight(FlowPaneLayout.addFlowPane());
+
+        return borderPane;
     }
 }
