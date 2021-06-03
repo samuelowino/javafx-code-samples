@@ -38,10 +38,10 @@ public class HBoxLayout {
         hBox.setSpacing(10);
         hBox.setStyle("-fx-background-color: #336699;");
 
-        Button startButton = new Button("Start");
+        Button startButton = new Button("Current Prices");
         startButton.setPrefSize(100, 20);
 
-        Button stopButton = new Button("Stop");
+        Button stopButton = new Button("Projected Cost");
         stopButton.setPrefSize(100, 20);
 
         hBox.getChildren().addAll(startButton, stopButton);
